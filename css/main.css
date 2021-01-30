@@ -12,11 +12,20 @@ html, body {
     font-weight: normal;
 }
 
+@font-face{
+    font-family:"balqis-script";
+    src:url("../fonts/Balqis.woff2") format('woff2'),
+    url("../fonts/Balqis.woff") format('woff'),
+    url("../fonts/Balqis.ttf") format('truetype');
+}
+
 .page-wrap {
     width: var(--main-width);
     margin: 0 auto;
     padding: 0 100px;
 }
+
+/* region Header */
 
 header {
     position: absolute;
@@ -70,7 +79,7 @@ header {
     display: inline-block;
     width: 20px;
     height: 20px;
-    content:"";
+    content: "";
     vertical-align: middle;
     margin-right: 5px;
 }
@@ -96,15 +105,31 @@ header {
     font-size: 3em;
 }
 
+/*endregion*/
+
+/* region Fairy tail */
+
+/* endregion */
+
+/* region Our trip */
+
+/* endregion */
+
+/* region Hotel */
+
+/* endregion */
+
+/* region Price */
+
+/* endregion */
+
+/* region Footer */
+
+/* endregion */
+
 .beautiful-font {
     font-family: balqis-script, serif;
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face{
-    font-family:"balqis-script";
-    src:url("../fonts/Balqis.woff2") format('woff2'),
-        url("../fonts/Balqis.woff") format('woff'),
-        url("../fonts/Balqis.ttf") format('truetype');
-}
