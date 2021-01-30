@@ -10,6 +10,8 @@ html, body {
     font-family: Roboto Condensed, serif;
     font-style: normal;
     font-weight: normal;
+
+    background-color: white;
 }
 
 @font-face{
@@ -22,26 +24,50 @@ html, body {
 .page-wrap {
     width: var(--main-width);
     margin: 0 auto;
-    padding: 0 100px;
+}
+
+section {
+    margin-top: 100px;
+    min-height: 500px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.block-title .title {
+    margin: 0;
+    color: #E2AB3F;
+    font-size: 5em;
+}
+
+.block-title .title-text {
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.25em;
 }
 
 /* region Header */
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
     min-width: 100%;
-    min-height: 100%;
-    background: url("../img/MainPhoto.jpg") no-repeat;
+    min-height: 100vh;
+    background: url("../img/MainPhoto.jpg") fixed no-repeat;
     background-size: cover;
     color: black;
+
+    /* TODO пофиксить баг с полосой справа */
 }
 
 .header-top {
-    height: 50px;
-    margin-bottom: 100px;
-    margin-top: 35px;
+    margin-bottom: 25vh;
+    padding-top: 35px;
 }
 
 .main-menu {
@@ -51,6 +77,7 @@ header {
 .main-menu ul {
     padding: 0;
     list-style: none;
+    margin: 0;
 }
 
 .main-menu li {
@@ -60,46 +87,35 @@ header {
     font-size: 18px;
 }
 
-.main-menu a {
-    text-decoration: none;
-    color: black;
-}
-
-.main-menu a:hover {
-    text-decoration: underline;
-}
-
 .phone-number {
     float: right;
 }
 
 .phone-number::before {
-    background: url("../img/phone.svg") left center no-repeat;
-    background-size: 20px auto;
+    --phone-size: 20px;
+    background: url("../img/phone.svg") center no-repeat;
+    background-size: var(--phone-size);
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: var(--phone-size);
+    height: var(--phone-size);
     content: "";
     vertical-align: middle;
     margin-right: 5px;
 }
 
-.promo-text {
+.promo {
     margin: 0 auto;
     text-align: center;
 }
 
-.cappadocia {
+.promo-title {
     margin: 0;
     font-size: 12.5em;
 }
 
-.under-main {
-    float: right;
+.promo-text {
     margin: 0;
-    position: relative;
-    top: -50px;
-    right: 100px;
+    transform: translate(200px, -65px);
     font-style: italic;
     font-weight: 300;
     font-size: 3em;
@@ -109,17 +125,33 @@ header {
 
 /* region Fairy tail */
 
+.fairy-tail .block-title .title-text {
+    transform: translate(150px, -25px);
+}
+
 /* endregion */
 
 /* region Our trip */
+
+.our-trip .block-title .title-text {
+    transform: translate(200px, -25px);
+}
 
 /* endregion */
 
 /* region Hotel */
 
+.hotel .block-title .title-text {
+    transform: translate(100px, -25px);
+}
+
 /* endregion */
 
 /* region Price */
+
+.price .block-title .title-text {
+    transform: translate(100px, -25px);
+}
 
 /* endregion */
 
