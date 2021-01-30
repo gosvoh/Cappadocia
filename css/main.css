@@ -1,0 +1,110 @@
+:root {
+    --min-width: 1200px;
+    --main-width: 1000px;
+}
+
+html, body {
+    margin: 0;
+    min-width: var(--min-width);
+
+    font-family: Roboto Condensed, serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.page-wrap {
+    width: var(--main-width);
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/MainPhoto.jpg") no-repeat;
+    background-size: 100% auto;
+    color: black;
+}
+
+.header-top {
+    height: 50px;
+    margin-bottom: 100px;
+    margin-top: 35px;
+}
+
+.main-menu {
+    float: left;
+}
+
+.main-menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin-right: 35px;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+.phone-number {
+    float: right;
+}
+
+.phone-number::before {
+    background: url("../img/phone.svg") left center no-repeat;
+    background-size: 20px auto;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content:"";
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.promo-text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cappadocia {
+    margin: 0;
+    font-size: 12.5em;
+}
+
+.under-main {
+    float: right;
+    margin: 0;
+    position: relative;
+    top: -50px;
+    right: 100px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.beautiful-font {
+    font-family: balqis-script, serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family:"balqis-script";
+    src:url("../fonts/Balqis.woff2") format('woff2'),
+        url("../fonts/Balqis.woff") format('woff'),
+        url("../fonts/Balqis.ttf") format('truetype');
+}
