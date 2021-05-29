@@ -1,0 +1,121 @@
+html,
+body {
+  margin: 0;
+  min-width: 1200px;
+  font-family: Roboto Condensed, serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: white;
+}
+
+@font-face {
+  font-family: "balqis-script";
+  src: url("../fonts/Balqis.woff2") format("woff2"), url("../fonts/Balqis.woff") format("woff"), url("../fonts/Balqis.ttf") format("truetype");
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: balqis-script, serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+nav > * {
+  position: absolute;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  margin: 2em 0;
+}
+nav ul li {
+  margin: 0 2em;
+}
+nav ul :first-child {
+  margin-left: 0;
+}
+nav ul :last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.width-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("../img/MainPhoto.jpg") fixed no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+header > div {
+  position: relative;
+}
+header h1 {
+  font-size: 15em;
+}
+header p {
+  font-size: 3em;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: url("../img/Footer.png") no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+footer > * {
+  margin: auto;
+  margin-top: 30vh;
+}
+footer h1 {
+  font-size: 5em;
+}
+
+.phone::before {
+  content: url("../img/phone.svg");
+  filter: invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg) brightness(91%) contrast(97%);
+}
+
+.mail::before {
+  content: url("../img/mail.svg");
+  filter: brightness(0) saturate(100%) invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg) brightness(91%) contrast(97%);
+}
+
+.socials img {
+  margin: 1em;
+}/*# sourceMappingURL=style.css.map */
