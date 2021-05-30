@@ -1,7 +1,8 @@
+@charset "UTF-8";
 html,
 body {
   margin: 0;
-  min-width: 1200px;
+  min-width: 600px;
   font-family: Roboto Condensed, serif;
   font-style: normal;
   font-weight: 300;
@@ -69,24 +70,40 @@ a:hover {
 }
 
 .width-container {
-  max-width: 70%;
+  width: 70%;
   margin: 0 auto;
 }
 
+.section-header {
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.section-header p {
+  position: absolute;
+  margin: 0;
+  bottom: -0.25em;
+  left: 4em;
+}
+
 .fairy-tail {
-  max-width: 70%;
+  width: 85%;
   margin: 2em 2em;
   margin-left: 0;
 }
 
 .fairy-tail img {
   float: left;
-  width: 70%;
+  width: 60%;
   margin-right: 2em;
 }
 
 .fairy-tail .section-header {
   position: relative;
+  /* Лютый костыль, но как решить 
+    это по-другому я пока что не знаю */
+  margin: 2em 0;
+  left: 17.5%;
 }
 
 .fairy-tail .section-header p {
@@ -97,7 +114,7 @@ a:hover {
 }
 
 .trip {
-  max-width: 70%;
+  width: 85%;
   margin: 2em 2em;
   float: right;
   margin-right: 0;
@@ -105,11 +122,16 @@ a:hover {
 
 .trip img {
   float: right;
-  width: 70%;
+  width: 60%;
+  margin-left: 2em;
 }
 
 .trip .section-header {
   position: relative;
+  /* Лютый костыль, но как решить 
+    это по-другому я пока что не знаю */
+  left: 0%;
+  margin-left: 0;
 }
 
 .trip .section-header p {
@@ -123,6 +145,7 @@ a:hover {
   padding: 0.5em 1em;
   border: 2px yellow solid;
   background-color: white;
+  margin: 2em 0;
 }
 
 .trip button:hover, .trip button:focus {
@@ -148,7 +171,7 @@ header {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: url("../img/MainPhoto.jpg") fixed no-repeat;
+  background: url("../img/MainPhoto.jpg") no-repeat;
   background-position: bottom center;
   background-size: cover;
 }
@@ -158,7 +181,7 @@ header > div {
 }
 
 header h1 {
-  font-size: 15em;
+  font-size: 30%;
 }
 
 header p {
@@ -206,7 +229,12 @@ footer h1 {
   margin: 1em;
 }
 
-.section-header {
-  margin-bottom: 3em;
+.plain-text {
+  font-size: 0.85em;
+}
+
+.empty {
+  height: 2em;
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */

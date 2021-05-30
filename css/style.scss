@@ -1,4 +1,4 @@
-$min-width: 1200px;
+$min-width: 600px;
 $main-width: 70%;
 
 html,
@@ -75,23 +75,39 @@ a {
 }
 
 .width-container {
-  max-width: $main-width;
+  width: $main-width;
   margin: 0 auto;
 }
 
+.section-header {
+  margin-bottom: 3em;
+  position: relative;
+
+  p {
+    position: absolute;
+    margin: 0;
+    bottom: -0.25em;
+    left: 4em;
+  }
+}
+
 .fairy-tail {
-  max-width: $main-width;
+  width: $main-width + 15%;
   margin: 2em 2em;
   margin-left: 0;
 
   img {
     float: left;
-    width: 70%;
+    width: 60%;
     margin-right: 2em;
   }
 
   .section-header {
     position: relative;
+    /* Лютый костыль, но как решить 
+    это по-другому я пока что не знаю */
+    margin: 2em 0;
+    left: 17.5%;
 
     p {
       position: absolute;
@@ -103,18 +119,23 @@ a {
 }
 
 .trip {
-  max-width: $main-width;
+  width: $main-width + 15%;
   margin: 2em 2em;
   float: right;
   margin-right: 0;
 
   img {
     float: right;
-    width: 70%;
+    width: 60%;
+    margin-left: 2em;
   }
 
   .section-header {
     position: relative;
+    /* Лютый костыль, но как решить 
+    это по-другому я пока что не знаю */
+    left: 0%;
+    margin-left: 0;
 
     p {
       position: absolute;
@@ -128,6 +149,7 @@ a {
     padding: 0.5em 1em;
     border: 2px yellow solid;
     background-color: white;
+    margin: 2em 0;
 
     &:hover,
     &:focus {
@@ -148,7 +170,6 @@ section {
 }
 
 header {
-  //position: absolute;
   top: 0;
   left: 0;
 
@@ -158,7 +179,7 @@ header {
   display: grid;
   place-items: center;
 
-  background: url("../img/MainPhoto.jpg") fixed no-repeat;
+  background: url("../img/MainPhoto.jpg") no-repeat;
   background-position: bottom center;
   background-size: cover;
 
@@ -167,7 +188,7 @@ header {
   }
 
   h1 {
-    font-size: 15em;
+    font-size: 30%;
   }
 
   p {
@@ -216,6 +237,11 @@ footer {
   margin: 1em;
 }
 
-.section-header {
-  margin-bottom: 3em;
+.plain-text {
+  font-size: 0.85em;
+}
+
+.empty {
+  height: 2em;
+  background-color: red;
 }
