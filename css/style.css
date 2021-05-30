@@ -12,6 +12,7 @@ body {
   font-family: "balqis-script";
   src: url("../fonts/Balqis.woff2") format("woff2"), url("../fonts/Balqis.woff") format("woff"), url("../fonts/Balqis.ttf") format("truetype");
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -32,20 +33,27 @@ nav {
   font-size: 1.5em;
   font-weight: bold;
 }
+
 nav > * {
   position: absolute;
   width: 100%;
 }
+
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 2em 0;
 }
+
 nav ul li {
   margin: 0 2em;
 }
+
 nav ul :first-child {
   margin-left: 0;
 }
+
 nav ul :last-child {
   margin-left: auto;
   margin-right: 0;
@@ -55,6 +63,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -64,23 +73,94 @@ a:hover {
   margin: 0 auto;
 }
 
+.fairy-tail {
+  max-width: 70%;
+  margin: 2em 2em;
+  margin-left: 0;
+}
+
+.fairy-tail img {
+  float: left;
+  width: 70%;
+  margin-right: 2em;
+}
+
+.fairy-tail .section-header {
+  position: relative;
+}
+
+.fairy-tail .section-header p {
+  position: absolute;
+  margin: 0;
+  bottom: -0.25em;
+  left: 6em;
+}
+
+.trip {
+  max-width: 70%;
+  margin: 2em 2em;
+  float: right;
+  margin-right: 0;
+}
+
+.trip img {
+  float: right;
+  width: 70%;
+}
+
+.trip .section-header {
+  position: relative;
+}
+
+.trip .section-header p {
+  position: absolute;
+  margin: 0;
+  bottom: -0.25em;
+  left: 7.75em;
+}
+
+.trip button {
+  padding: 0.5em 1em;
+  border: 2px yellow solid;
+  background-color: white;
+}
+
+.trip button:hover, .trip button:focus {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+section {
+  clear: both;
+  margin-bottom: 5em;
+}
+
+section h1 {
+  color: yellow;
+  font-size: 3em;
+}
+
 header {
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   background: url("../img/MainPhoto.jpg") fixed no-repeat;
   background-position: bottom center;
   background-size: cover;
 }
+
 header > div {
   position: relative;
 }
+
 header h1 {
   font-size: 15em;
 }
+
 header p {
   font-size: 3em;
   font-style: italic;
@@ -93,29 +173,40 @@ header p {
 footer {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: url("../img/Footer.png") no-repeat;
   background-position: top center;
   background-size: cover;
 }
+
 footer > * {
   margin: auto;
   margin-top: 30vh;
 }
+
 footer h1 {
   font-size: 5em;
 }
 
 .phone::before {
   content: url("../img/phone.svg");
-  filter: invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg) brightness(91%) contrast(97%);
+  -webkit-filter: invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg) brightness(91%) contrast(97%);
+          filter: invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg) brightness(91%) contrast(97%);
 }
 
 .mail::before {
   content: url("../img/mail.svg");
-  filter: brightness(0) saturate(100%) invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg) brightness(91%) contrast(97%);
+  -webkit-filter: brightness(0) saturate(100%) invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg) brightness(91%) contrast(97%);
+          filter: brightness(0) saturate(100%) invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg) brightness(91%) contrast(97%);
 }
 
 .socials img {
   margin: 1em;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.section-header {
+  margin-bottom: 3em;
+}
+/*# sourceMappingURL=style.css.map */

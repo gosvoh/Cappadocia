@@ -79,6 +79,74 @@ a {
   margin: 0 auto;
 }
 
+.fairy-tail {
+  max-width: $main-width;
+  margin: 2em 2em;
+  margin-left: 0;
+
+  img {
+    float: left;
+    width: 70%;
+    margin-right: 2em;
+  }
+
+  .section-header {
+    position: relative;
+
+    p {
+      position: absolute;
+      margin: 0;
+      bottom: -0.25em;
+      left: 6em;
+    }
+  }
+}
+
+.trip {
+  max-width: $main-width;
+  margin: 2em 2em;
+  float: right;
+  margin-right: 0;
+
+  img {
+    float: right;
+    width: 70%;
+  }
+
+  .section-header {
+    position: relative;
+
+    p {
+      position: absolute;
+      margin: 0;
+      bottom: -0.25em;
+      left: 7.75em;
+    }
+  }
+
+  button {
+    padding: 0.5em 1em;
+    border: 2px yellow solid;
+    background-color: white;
+
+    &:hover,
+    &:focus {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  }
+}
+
+section {
+  clear: both;
+  margin-bottom: 5em;
+
+  h1 {
+    color: yellow;
+    font-size: 3em;
+  }
+}
+
 header {
   //position: absolute;
   top: 0;
@@ -146,4 +214,8 @@ footer {
 
 .socials img {
   margin: 1em;
+}
+
+.section-header {
+  margin-bottom: 3em;
 }
