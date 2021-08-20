@@ -1,0 +1,17 @@
+@use '../abstracts/colors' as *;
+
+.section-header {
+  margin: 2rem 1rem;
+  position: relative;
+
+  h1 {
+    color: $clr-accent-300;
+  }
+
+  p {
+    position: absolute;
+    margin: 0;
+    bottom: -0.25em;
+    left: 5em;
+  }
+}

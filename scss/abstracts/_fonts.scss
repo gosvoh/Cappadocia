@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "balqis-script";
+  src: url("../fonts/Balqis.woff2") format("woff2"),
+  url("../fonts/Balqis.woff") format("woff"),
+  url("../fonts/Balqis.ttf") format("truetype");
+}
+
+$header-ff: (balqis-script, serif);
+$main-ff: (Roboto Condensed, serif);

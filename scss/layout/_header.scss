@@ -1,0 +1,19 @@
+header {
+  height: 100vh;
+  width: 100vw;
+  background: url("../img/MainPhoto.jpg") no-repeat bottom center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+
+  & > div {
+    position: relative;
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+}

@@ -1,100 +1,15 @@
-$min-width: 600px;
-$main-width: 70%;
-
-html,
-body {
-  margin: 0;
-  min-width: $min-width;
-
-  font-family: Roboto Condensed, serif;
-  font-style: normal;
-  font-weight: 300;
-
-  background-color: white;
-}
-
-@font-face {
-  font-family: "balqis-script";
-  src: url("../fonts/Balqis.woff2") format("woff2"),
-    url("../fonts/Balqis.woff") format("woff"),
-    url("../fonts/Balqis.ttf") format("truetype");
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-h1 {
-  font-family: balqis-script, serif;
-  font-style: normal;
-  font-weight: normal;
-  padding: 0;
-  margin: 0;
-}
-
-nav {
-  position: relative;
-  z-index: 1;
-
-  font-size: 1.5em;
-  font-weight: bold;
-
-  & > * {
-    position: absolute;
-    width: 100%;
-  }
-
-  ul {
-    display: flex;
-    margin: 2em 0;
-
-    li {
-      margin: 0 2em;
-    }
-
-    :first-child {
-      margin-left: 0;
-    }
-
-    :last-child {
-      margin-left: auto;
-      margin-right: 0;
-    }
-  }
-}
-
-a {
-  text-decoration: none;
-  color: black;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
+@use 'abstracts/fonts';
+@use 'abstracts/variables' as var;
 
 .width-container {
-  width: $main-width;
+  width: var.$main-width;
   margin: 0 auto;
 }
 
-.section-header {
-  margin-bottom: 3em;
-  position: relative;
-
-  p {
-    position: absolute;
-    margin: 0;
-    bottom: -0.25em;
-    left: 4em;
-  }
-}
 
 .fairy-tail {
-  width: $main-width + 15%;
-  margin: 2em 2em;
-  margin-left: 0;
+  width: var.$main-width + 15%;
+  margin: 2em 2em 2em 0;
 
   img {
     float: left;
@@ -119,10 +34,9 @@ a {
 }
 
 .trip {
-  width: $main-width + 15%;
-  margin: 2em 2em;
+  width: var.$main-width + 15%;
   float: right;
-  margin-right: 0;
+  margin: 2em 0 2em 2em;
 
   img {
     float: right;
@@ -134,7 +48,7 @@ a {
     position: relative;
     /* Лютый костыль, но как решить 
     это по-другому я пока что не знаю */
-    left: 0%;
+    left: 0;
     margin-left: 0;
 
     p {
@@ -179,8 +93,7 @@ header {
   display: grid;
   place-items: center;
 
-  background: url("../img/MainPhoto.jpg") no-repeat;
-  background-position: bottom center;
+  background: url("../img/MainPhoto.jpg") no-repeat bottom center;
   background-size: cover;
 
   & > div {
@@ -188,7 +101,7 @@ header {
   }
 
   h1 {
-    font-size: 30%;
+    font-size: 10rem;
   }
 
   p {
@@ -207,13 +120,11 @@ footer {
 
   display: flex;
 
-  background: url("../img/Footer.png") no-repeat;
-  background-position: top center;
+  background: url("../img/Footer.png") no-repeat top center;
   background-size: cover;
 
   & > * {
-    margin: auto;
-    margin-top: 30vh;
+    margin: 30vh auto auto;
   }
 
   h1 {
@@ -223,14 +134,10 @@ footer {
 
 .phone::before {
   content: url("../img/phone.svg");
-  filter: invert(69%) sepia(53%) saturate(502%) hue-rotate(359deg)
-    brightness(91%) contrast(97%);
 }
 
 .mail::before {
   content: url("../img/mail.svg");
-  filter: brightness(0) saturate(100%) invert(69%) sepia(53%) saturate(502%)
-    hue-rotate(359deg) brightness(91%) contrast(97%);
 }
 
 .socials img {

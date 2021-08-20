@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "balqis-script";
+  src: url("../fonts/Balqis.woff2") format("woff2"), url("../fonts/Balqis.woff") format("woff"), url("../fonts/Balqis.ttf") format("truetype");
+}
+html,
+body,
+ul,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: white;
+}
+
+:root, h1 {
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  font-family: Roboto Condensed, serif;
+}
+
+h1 {
+  font-family: balqis-script, serif;
+}
+
+nav {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 4em;
+}
+header p {
+  font-style: italic;
+}
+
+.section-header h1 {
+  font-size: 2.5em;
+}
+
+.plain-text {
+  text-align: center;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background: url("../img/MainPhoto.jpg") no-repeat bottom center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+header > div {
+  position: relative;
+}
+header p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  background-color: #e9c06d;
+  border-bottom: 1px solid black;
+  text-align: center;
+  position: relative;
+}
+nav ul li :last-child {
+  border: none;
+}
+nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1em 0;
+}
+nav ul li a :hover {
+  background-color: #e2ac40;
+}
+
+.section-header {
+  margin: 2rem 1rem;
+  position: relative;
+}
+.section-header h1 {
+  color: #e2ac40;
+}
+.section-header p {
+  position: absolute;
+  margin: 0;
+  bottom: -0.25em;
+  left: 5em;
+}
+
+img {
+  max-width: 85%;
+  margin-bottom: 2em;
+}
+
+.plain-text {
+  max-width: 85%;
+  margin: 1em auto;
+}
+.plain-text p {
+  margin: 2em 0;
+}
+
+.fairy-tail img {
+  float: left;
+}
+
+.trip img {
+  float: right;
+}
+.trip button {
+  margin: 2em 0;
+  padding: 0.75em 2em;
+  border: 2px #e2ac40 solid;
+  background-color: white;
+}
+.trip button:hover, .trip button:focus {
+  background-color: #e2ac40;
+  border: 2px #d1951f solid;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

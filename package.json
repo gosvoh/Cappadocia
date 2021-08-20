@@ -1,0 +1,15 @@
+{
+  "name": "cappadocia",
+  "version": "1.0.0",
+  "scripts": {
+    "devParcel": "parcel src/index.html",
+    "buildParcel": "parcel build src/index.html",
+    "watchingSass": "sass --watch scss:css"
+  },
+  "author": "gosvoh",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.38.0"
+  }
+}
