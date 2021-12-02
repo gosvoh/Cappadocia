@@ -1,6 +1,6 @@
 @font-face {
   font-family: "balqis-script";
-  src: url("../fonts/Balqis.woff2") format("woff2"), url("../fonts/Balqis.woff") format("woff"), url("../fonts/Balqis.ttf") format("truetype");
+  src: url("fonts/Balqis.woff2") format("woff2"), url("fonts/Balqis.woff") format("woff"), url("fonts/Balqis.ttf") format("truetype");
 }
 html,
 body,
@@ -58,6 +58,10 @@ header p {
 
 .section-header h1 {
   font-size: 2.5em;
+  line-height: 1.75em;
+}
+.section-header p {
+  font-style: italic;
 }
 
 .plain-text {
@@ -68,10 +72,29 @@ button {
   text-transform: uppercase;
 }
 
+footer {
+  height: 100vh;
+  width: 100vw;
+  background: url("img/MainPhoto.jpg") no-repeat bottom center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .contacts {
+  width: auto;
+  height: 50vh;
+  background-image: url("img/balloon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 header {
   height: 100vh;
   width: 100vw;
-  background: url("../img/MainPhoto.jpg") no-repeat bottom center;
+  background: url("img/MainPhoto.jpg") no-repeat bottom center fixed;
   background-size: cover;
   display: grid;
   place-items: center;
@@ -96,7 +119,7 @@ nav ul li {
   text-align: center;
   position: relative;
 }
-nav ul li :last-child {
+nav ul li:last-child {
   border: none;
 }
 nav ul li a {
@@ -119,13 +142,13 @@ nav ul li a :hover {
 .section-header p {
   position: absolute;
   margin: 0;
-  bottom: -0.25em;
+  bottom: 0;
   left: 5em;
 }
 
 img {
   max-width: 85%;
-  margin-bottom: 2em;
+  margin: 0 auto 2em;
 }
 
 .plain-text {
@@ -153,6 +176,17 @@ img {
   background-color: #e2ac40;
   border: 2px #d1951f solid;
   cursor: pointer;
+}
+.trip .section-header p {
+  transform: translateX(1.25em);
+}
+
+.hotel .section-header p {
+  transform: translateX(-1.5em);
+}
+
+.price .section-header p {
+  transform: translateX(-2em);
 }
 
 /*# sourceMappingURL=main.css.map */

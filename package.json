@@ -4,7 +4,7 @@
   "scripts": {
     "devParcel": "parcel src/index.html",
     "buildParcel": "parcel build src/index.html",
-    "watchingSass": "sass --watch scss:css"
+    "watchingSass": "sass --watch scss:"
   },
   "author": "gosvoh",
   "license": "MIT",
